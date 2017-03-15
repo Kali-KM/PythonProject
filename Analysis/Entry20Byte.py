@@ -48,7 +48,11 @@ class Parsing_PE():
 		self.filealignment = LtoI(optional_header[0x24:0x28])
 		
 
+<<<<<<< HEAD
 		self.sectiontable_offset = self.e_lfanew+0x18+sizeofoptionalheader	# ¼½¼Ç Å×ÀÌºí À§Ä¡ ÁöÁ¤
+=======
+		self.sectiontable_offset = self.e_lfanew+0x18+sizeofoptionalheader	# ì„¹ì…˜ í…Œì´ë¸” ìœ„ì¹˜ ì§€ì •
+>>>>>>> e7316945093310c474acf3374f19f52cdc206ced
 	
 		
 	def IMAGE_SECTION_HEADER(self):
@@ -125,4 +129,8 @@ def main():
 	o.close()
 	
 if __name__ == '__main__':
+<<<<<<< HEAD
 	main()
+=======
+	main()
+>>>>>>> e7316945093310c474acf3374f19f52cdc206ced
